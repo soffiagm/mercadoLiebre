@@ -22,11 +22,7 @@ header {
     align-items: center;
 }
 
-.burger-container {
-    display: block;
-    text-align: center;
-}
-
+/* burger things */
 .burger-menu {
     width: 45px;
     height: 45px;
@@ -42,11 +38,59 @@ header {
     padding: 10px;
 }
 
+main {
+    display: block;
+    background-color: #ebebeb;
+    color: #666;
+}
+
+section {
+    padding: 10px;
+}
+
+article {
+    display: block;
+    width: 90%;
+    margin: 10px auto 10px;
+    background-color: #ffffff;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.fas.fa-truck {
+    color: #39b54a;
+    border: solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 15px;
+    height: 35px;
+    width: 35px;
+}
+
+.content {
+    display: block;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    justify-content: left;
+}
+
+p {
+    font-size: 12px;
+}
+
 .titulares {
+    display: block;
     font-size: 24px;
+    width: 90%;
+    margin: 10px auto 10px;
 }
 
 .precios {
+    color: #000000;
     font-size: 18px;
 }
 
@@ -57,6 +101,7 @@ header {
 
 .descripciones {
     font-size: 16px;
+    padding-top: 10px;
 }
 
 footer {
@@ -71,7 +116,7 @@ footer {
     padding-bottom: 40px;
 }
 
-.first-line {
+.first-line b {
     font-size: 14px;
 }
 
@@ -83,4 +128,31 @@ footer {
 
 .copyright {
     text-align: left;
+}
+
+@media (min-width: 390px) {
+    /* desktop y tablet*/
+    .burger-container {
+        display: none;
+    }
+}
+
+@media (min-width: 390px) {
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (max-width: 390px) {
+    /* mobile */
+    navbar {
+        display: none;
+    }
+    .burger-container {
+        display: block;
+        text-align: center;
+    }
+    .descripciones {
+        display: none;
+    }
 }
