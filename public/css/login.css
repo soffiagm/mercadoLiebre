@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/* /////////////////////// HEADER //////////////////////// */
+
 header {
     background-color: #eac926;
     font-size: 12px;
@@ -111,7 +113,6 @@ main {
     /* width: 84vw; */
     max-width: 100%;
     justify-content: center;
-    
 }
 
 .form {
@@ -124,7 +125,7 @@ main {
 
 .input {
     margin: 10px;
-    width: 50vw;
+    width: 350px;
     height: fit-content;
     background-color: #ffffff;
     border: 1px solid #ebebeb;
@@ -135,7 +136,7 @@ main {
 
 .boton-enviar {
     margin: 10px;
-    width: 50vw;
+    width: 350px;
     height: fit-content;
     background-color: #1259c3;
     color: #ffffff;

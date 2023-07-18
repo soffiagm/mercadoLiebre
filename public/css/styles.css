@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/* /////////////////////// HEADER //////////////////////// */
+
 header {
     background-color: #eac926;
     font-size: 12px;
@@ -27,12 +29,15 @@ header {
 
 #search-input {
     border: none;
+    width: 92%;
 }
 
 #search-button {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     padding-left: 10px;
+    justify-content: right;
+    cursor: pointer;
 }
 
 .hook {
@@ -99,6 +104,8 @@ header {
     padding: 10px;
 }
 
+/* //////////////////////// BODY ///////////////////////// */
+
 main {
     display: block;
     background-color: #ebebeb;
@@ -115,9 +122,9 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
-    margin: 10px;
+    justify-content: space-evenly;
+    /* width: 90%;
+    margin: 10px; */
     /* width: 100%;
     padding: 10px; */
 }
@@ -159,6 +166,11 @@ section {
     width: 30px;
     right: 20px;
     top: -15px;
+    transition: all 0.5s ease 0s;
+}
+
+.fas.fa-truck:hover {
+    transform: rotate(-90deg);
 }
 
 .content {
@@ -208,6 +220,8 @@ p {
     font-size: 16px;
     padding-top: 10px;
 }
+
+/* /////////////////////// FOOTER //////////////////////// */
 
 footer {
     display: block;
@@ -263,7 +277,8 @@ footer {
         flex-direction: row;
         width: 20%;
         max-width: 400px;
-        flex: 1 0 25%;
+        flex: 1 0 40%;
+        justify-content: space-evenly;
     }
 
     .flex-de-abajo {
@@ -271,7 +286,7 @@ footer {
         padding-inline: 50px;
     }
 
-    article {
+    article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
